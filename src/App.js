@@ -28,7 +28,7 @@ function App() {
 
     // Find the first misspelled word
     for (let word of words) {
-      const lowerCaseWord = word.toLowerCase().replace(/[^a-z]/g, "");
+      const lowerCaseWord = word.toLowerCase().replace(/[^a-z]/gi, "");
 
       if (lowerCaseWord && customDictionary[lowerCaseWord]) {
         setSuggestion(`Did you mean: ${customDictionary[lowerCaseWord]}?`);
