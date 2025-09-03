@@ -7,7 +7,7 @@ function App() {
   const [suggestion, setSuggestion] = useState("");
 
   const customDictionary = {
-    tch: "the",
+    teh: "the",
     wrok: "work",
     fot: "for",
     exampl: "example",
